@@ -39,8 +39,37 @@ History Log:
 * Fix for Wifi/BT (Ampak ap6212) - ** Updated **
 
 
-Boot Log:
-========
+Log:
+====
+
+
+	Module                  Size  Used by
+	bnep                   17511  2
+	ov5640                 50600  0
+	dw9714_act             12833  0
+	actuator               12385  1 dw9714_act
+	hci_uart               27742  0
+	bluetooth             195943  6 bnep,hci_uart
+	vfe_v4l2              747618  0
+	videobuf2_dma_contig    17668  1 vfe_v4l2
+	videobuf2_memops       12546  1 videobuf2_dma_contig
+	videobuf2_core         30952  1 vfe_v4l2
+	ir_sanyo_decoder       12491  0
+	ir_lirc_codec          12756  0
+	ir_rc5_decoder         12487  0
+	ir_sony_decoder        12489  0
+	ir_rc6_decoder         12520  0
+	ir_nec_decoder         12487  0
+	lirc_dev               17032  1 ir_lirc_codec
+	ir_mce_kbd_decoder     12628  0
+	cedar_ve               17368  0
+	ss                     37179  0
+	ir_jvc_decoder         12487  0
+	vfe_io                 34085  3 vfe_v4l2,ov5640,dw9714_act
+	sunxi_ir_rx            12902  0
+	bcmdhd                624241  0
+	cfg80211              374207  1 bcmdhd
+
 
 
 	[   16.791364] sunxi-gmac 1c30000.eth eth0: eth0: PHY ID 001cc915 at 0 IRQ poll (1c30000.eth-0:00)
