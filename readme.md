@@ -4,7 +4,7 @@ Linux Device Tree Blob for the Banana Pi M64
 This is Device Tree Blob with correct settings for the BananaPi M64 running linux and kernel 3.10.10X with following:
 
 - eMMC (enabled) (possibly fixed only with correct settings - need testing)
-- Wifi (enabled) (fixe up)
+- Wifi (enabled) (fix up)
 - BT (enabled) (fix up)
 - OV5640 (should work - not tested)
 - HDMI 1080P
@@ -38,7 +38,11 @@ History Log:
 * initial commit
 * Fix for Wifi/BT (Ampak ap6212) - ** Updated **
 
+
 Boot Log:
+========
+
+
 	[   16.791364] sunxi-gmac 1c30000.eth eth0: eth0: PHY ID 001cc915 at 0 IRQ poll (1c30000.eth-0:00)
 	[   22.686767] libphy: 1c30000.eth-0:00 - Link is Up - 1000/Full
 	[   59.570681] EXT4-fs (mmcblk0p7): warning: mounting fs with errors, running e2fsck is recommended
