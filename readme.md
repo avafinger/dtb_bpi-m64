@@ -3,13 +3,15 @@ Linux Device Tree Blob for the Banana Pi M64
 
 This is Device Tree Blob with correct settings for the BananaPi M64 running linux and kernel 3.10.10X with following:
 
-- eMMC (enabled) (possibly fixed only with correct settings - need testing)
+- eMMC (enabled) (need a dirty hack for now)
 - Wifi (enabled) (fix up)
 - BT (enabled) (fix up)
-- OV5640 (should work - not tested)
+- OV5640 (enabled)
 - HDMI 1080P
 - GbE (enabled)
-- OTG (missing some bits - need a fix)
+- OTG (need a fix)
+- Gpio (not activated for now)
+- Uart (not activate for now)
 
 Instructions
 =============
@@ -37,7 +39,8 @@ History Log:
 ===========
 * initial commit
 * Fix for Wifi/BT (Ampak ap6212) - ** Updated **
-
+* Added kernel config
+* Added Ampak firmware (latest)
 
 Log:
 ====
